@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: #fff;
+    background: linear-gradient(to bottom, #000e2f, #1388c7);
+}
+
+/* general style*/
+.page-container {
+    width: 480px;
+    max-width: 100%;
+    padding: 16px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 32px;
+}
+
+h2 .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
+
+/*header styles*/
+header {
+    background-image: url('./pictures/WhatsApp\ Image\ 2024-04-22\ at\ 12.23.06_0e00710d.jpg');
+    height: 250px;
+    background-position: center center;
+    background-size: cover;
+}
+
+/*profile styles*/
+
+.profile {
+    text-align: center;
+    margin-top: -75px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border: solid 4px #fff;
+    border-radius: 50%;
+    display: inline-block;
+
+}
+
+.profile-image img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.profile-details {
+    font-size: 1rem;
+    margin: 24px 0;
+}
+
+.profile-details h1 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.tags span {
+    font-size: 0.875rem;
+    background-color: #3d64a6;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.motto {
+    padding-left: 50%;
+    font-size: 0.75rem;
+}
+
+/*project styles*/
+
+.project {
+    font-size: 1rem;
+    background-color: #3d64a6;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.project img {
+   max-width: 100%;
+
+}
+
+.project .project-title {
+    padding: 16px;
+    
+
+}
+
+.project-details {
+    display: none;
+    background-color: #3d64a6;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 16px;
+}
+
+.project-details .btn-outline {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px;
+    border: solid 2px #fff;
+    border-radius: 5px;
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+}
+
+.project-details .btn-outline:hover {
+    color: #3d64a6;
+    background-color: #fff;
+}
+
+.project:hover .project-details {
+    display: block;
+}
+
+/*contact style*/
+.profile-links {
+    list-style: none;
+
+}
+
+.profile-links li a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #3d64a6;
+    padding: 16px;
+    display: block;
+    margin: 8px 0;
+    border-radius: 5px;
+}
+
+.profile-links li a:hover {
+    background-color: #2b579e;
+}
+
+/*footer style*/
+footer {
+    font-size: 1rem;
+    text-align: center;
+    padding: 16px 0;
+}
+
+
+/*media query*/
+
+@media screen and (min-width: 768px) {
+
+    .projects {
+        overflow: hidden;
+    }
+
+    .project {
+        width: 48%;
+    }
+
+    .project:nth-child(2n +1) {
+        float: left;
+        margin-right: 4%;
+    }
+    
+}
+
