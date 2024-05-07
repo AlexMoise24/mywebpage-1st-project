@@ -88,6 +88,7 @@ header {
     margin-bottom: 16px;
     position: relative;
     overflow: hidden;
+    transition: 1s;
 
 }
 
@@ -126,6 +127,10 @@ header {
     bottom: 16px;
 }
 
+.project-details p{
+    text-align: center;
+}
+
 .project-details .btn-outline:hover {
     color: #3d64a6;
     background-color: #fff;
@@ -134,6 +139,11 @@ header {
 .project:hover .project-details {
     display: block;
 }
+
+.project-title{
+    text-align: center;
+}
+
 
 /*contact style*/
 .profile-links {
